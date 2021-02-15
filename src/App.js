@@ -13,12 +13,10 @@ import ProjectHead from './components/ProjectHead';
 class App extends Component{
 
   addNewPost = (user) =>{
-    user.id = Math.random().toString()
     this.props.addPost(user)
   }
 
   deletePost =(id)=>{
-    // let undeletedPosts = this.props.users.filter((user) => user.id !== id)
     this.props.deletePost(id)
   }
 

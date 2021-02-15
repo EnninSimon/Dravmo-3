@@ -26,7 +26,7 @@ const postsReducer = (state = initialState, action) => {
                 Condition: action.payload.Condition,
                 Picture: action.payload.Picture,
                 id: action.payload.id 
-            }
+            };
             return { ...state, users: [...state.users, newPost] }
         case "DELETE_POST":
             const filteredPosts = state.users.filter(user => user.id !== action.payload);
