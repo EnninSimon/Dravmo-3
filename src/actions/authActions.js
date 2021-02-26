@@ -1,4 +1,3 @@
-import { getFirebase } from "react-redux-firebase";
 export const signupUser = (user) => {
     return (dispatch, getState, { getFirebase }) => {
         const firebase = getFirebase();
