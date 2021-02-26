@@ -8,7 +8,6 @@ export const signupUser = (user) => {
 };
 
 
-
 export const loginUser = (email, password) => {
     return (dispatch, getState, { getFirebase }) => {
         const firebase = getFirebase();
